@@ -1,5 +1,62 @@
 /* ===== CSS RESET ===== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b3d9ff; /* light blue background */
+  color: #000;
+  line-height: 1.6;
+  padding: 2vh 2vw;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw; /* responsive text using vw */
+  margin-bottom: 3vh;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  width: 32%;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+/* responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== MEDIA QUERIES ===== */
+/* two-column layout for medium screens */
+@media screen and (max-width: 900px) {
+  section {
+    width: 48%;
+  }
+}
+
+/* one-column layout for small screens */
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
 }
