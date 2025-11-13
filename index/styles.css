@@ -29,3 +29,30 @@ section {
   border-radius: 8px;
   margin-bottom: 1em;
 }
+
+/* responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* ===== MEDIA QUERIES ===== */
+/* two-column layout for medium screens */
+@media screen and (max-width: 900px) {
+  section {
+    width: 48%;
+  }
+
+  }
+
+/* one-column layout for small screens */
+@media screen and (max-width: 600px) {
+  section 
+   width: 100%;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+}
+
